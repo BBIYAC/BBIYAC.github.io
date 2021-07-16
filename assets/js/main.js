@@ -92,7 +92,7 @@ modalCloses.forEach((modalClose) =>{
     })
 })
 
-/*==================== PORTFOLIO SWIPER  ====================*/
+/*==================== PROJECT SWIPER  ====================*/
 let swiperPortfolio = new Swiper(".portfolio__container", {
     cssMode: true,
     loop: true,
@@ -105,24 +105,6 @@ let swiperPortfolio = new Swiper(".portfolio__container", {
       el: ".swiper-pagination",
       clickable: true,
     },
-  });
-
-/*==================== TESTIMONIAL ====================*/
-let swiperTestimonial = new Swiper(".testimonial__container", {
-    loop: true,
-    grabCursor: true,
-    spaceBetween: 48,
-
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
-    },
-    breakpoints:{
-        568:{
-            slidesPerView: 2,
-        }
-    }
   });
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
@@ -195,12 +177,8 @@ sr.reveal('.portfolio .section__subtitle', {delay: 100})
 sr.reveal('.portfolio__container', {delay: 100})
 
 /*SCROLL PROJECT*/
-sr.reveal('.project__bg', {interval: 100})
+sr.reveal('.project__img', {interval: 100})
 
-/*SCROLL TESTIMONIAL*/
-sr.reveal('.testimonial .section__title', {delay: 100})
-sr.reveal('.testimonial .section__subtitle', {delay: 100})
-sr.reveal('.testimonial__container', {delay: 100})
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact .section__title', {delay: 100})
